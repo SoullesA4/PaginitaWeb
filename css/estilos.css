@@ -1,0 +1,314 @@
+*{
+	padding: 0;
+	margin:  0;
+	text-align: center;
+}
+body{
+	
+	background:url(../img/mc.png),black;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+header{
+	/*background-color: #8b8b8b;*/
+	color:white;
+	border-color: #df2308;
+}
+nav{
+	border: 5px solid #043d82;
+	width: 100%;
+	height: 45px;
+	box-shadow: 2px 2px 8px #000000;
+}
+#menu{
+	width: 80%;
+	padding-top: 15px;
+	margin: auto;
+}
+/*#336633*/
+#menu ul a{
+	color: #cccc33;
+	font:bold 30px Americana BT;
+	text-decoration: none;
+	padding: 10px 20px 10px 20px;
+	background:transparent ;
+	border-bottom: 8px solid transparent;
+	transition: border-bottom .9s;
+}
+#menu ul a:hover{
+	border-bottom: 8px solid #444444;
+}
+section{
+	margin-top: 2rem;
+	margin-right: 1%;
+	margin-left: 3%;
+	width: 77%;
+	color:white;
+	background-color: transparent;
+	flood-color: green;
+	float: left;
+	display: inline-block;
+}
+aside{
+	margin-top: 2rem;
+	margin-left: 1%;
+	margin-right: 3%;
+	width: 15%;
+	color:white;
+	display: inline-block;
+	background-color: transparent;
+	height: 600px;
+	float: center;
+}
+article{
+	font:bold 15px Comic Sans MS;
+	margin: auto;
+	margin-top: 1rem;
+	width: 90%;
+	text-align: center;
+	background-color: transparent;
+}
+.fotmma,.fotjiu,.fotmuay,.fotboxing,.fotbox,.fotin{
+	animation-name: cambiodecolor;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+}
+.pmma,.pjiu,.pmuay,.pboxing,.pbox,.pin{
+	animation-name: cambiodecolorletra;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;	
+}
+.pmma,.pjiu,.pmuay,.pboxing,.pbox,.pin{
+	text-align: center;	
+}
+@keyframes cambiodecolorletra{
+	0%{
+		opacity:1000%; 
+		color: white;
+	}
+	15%{
+		opacity: 100%;
+		color: white;
+	}
+	30%{
+		opacity: 100%;
+		color: white;
+	}
+	45%{
+		opacity: 100%;
+		color: yellow;
+	}
+	60%{
+		opacity: 100%;
+		color: yellow;
+	}
+	75%{
+		opacity: 100%;
+		color: black;
+	}
+	90%{
+		opacity: 100%;
+		color: black;
+	}
+	100%{
+		opacity: 100%;
+		color: pink;
+	}
+}
+@keyframes cambiodecolor{
+	0%{
+		opacity:60%; 
+		background-color: red;
+	}
+	15%{
+		opacity: 80%;
+		background-color: red;
+	}
+	30%{
+		opacity: 100%;
+		background-color: red;
+	}
+	45%{
+		opacity: 80%;
+		background-color: purple;
+	}
+	60%{
+		opacity: 60%;
+		background-color: purple;
+	}
+	75%{
+		opacity: 80%;
+		background-color: blue;
+	}
+	90%{
+		opacity: 100%;
+		background-color: blue;
+	}
+	100%{
+		opacity: 80%;
+		background-color: black;
+	}
+}
+footer{
+	font:bold 15px Comic Sans MS;
+	color: white;
+	display: inline-block;
+	background-color: red;
+	text-align: center;
+	height: auto;
+	width: 100%;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+p{
+	text-align: justify;
+}
+img{
+	width:40%;
+	height: auto;
+	margin:auto;
+	display: block;
+
+}
+
+.batman{
+	animation-name: destello-efecto-02;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes lediosa{
+	from{
+		background-color: transparent;
+	}
+	to{
+		background-color: #222222;
+	}
+}
+
+
+.main-container{
+	animation-name: foolishIn;
+	animation-duration: 10s;
+	animation-iteration-count: 1;
+}
+
+.dee,.sagat2{
+	animation-name: foolishIn;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+.titulo{
+	animation-name: aparicion;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+
+.guile,.soulless1,.dee1{
+	animation-name: aparicion;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(5, 5);
+    filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
+.foolishIn {
+  -webkit-animation-name: foolishIn;
+  animation-name: foolishIn;
+}
+@keyframes foolishIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0) rotate(360deg);
+    transform: scale(0, 0) rotate(360deg);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transform: scale(0.5, 0.5) rotate(0deg);
+    transform: scale(0.5, 0.5) rotate(0deg);
+  }
+
+  40% {
+    opacity: 1;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: scale(0.5, 0.5) rotate(0deg);
+    transform: scale(0.5, 0.5) rotate(0deg);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform-origin: 0%;
+    transform-origin: 0%;
+    -webkit-transform: scale(0.5, 0.5) rotate(0deg);
+    transform: scale(0.5, 0.5) rotate(0deg);
+  }
+
+  80% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: scale(0.5, 0.5) rotate(0deg);
+    transform: scale(0.5, 0.5) rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1) rotate(0deg);
+    transform: scale(1, 1) rotate(0deg);
+  }
+}
+
+.soulless,.balrog,.sagat1{
+	animation-name: destello-efecto-01;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes destello-efecto-01 {
+  0%, 50%, 100% {opacity: 1;}
+  25%, 75% {opacity: 0.6;-webkit-transform: scale3d(.3, .3, .3);transform: scale3d(1.5, 1.5, 1.5);}
+
+@keyframes destello-efecto-02 {
+  0%, 50%, 100% {opacity: 1;}
+  25%, 75% {opacity: 0.6;-webkit-transform: scale3d(.5, .5, .5);transform: scale3d(5, 5, 5);}
+
+.box1{
+	animation-name: puffIn;
+	animation-duration: 2s;
+	animation-iteration-count: inherit;
+}
+
+@keyframes puffIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
